@@ -52,12 +52,15 @@ public class LocateWebelements {
 
         driver.findElement(By.className("submit")).click();
 
+        driver.manage().window().maximize(); //to view screen in maximum size
+
+        driver.navigate().forward();
+
+        driver.navigate().back();
+
         driver.close();
-
-
 
         driver.quit();
 
     }
-
 }
